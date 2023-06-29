@@ -1,0 +1,5 @@
+{
+    "src/**/*.{js,jsx,ts,tsx}": ["yarn fix:scripts"],
+    "src/**/*.{css,scss}": ["yarn fix:styles"],
+    "src/**/*.{css,scss,js,ts,ts,tsx,json}": ["yarn fix:prettier"]
+}
