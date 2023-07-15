@@ -1,0 +1,35 @@
+.collection-card {
+	height: 100%;
+
+	&__img {
+		@apply mb-3;
+		position: relative;
+		padding-bottom: 120%;
+	}
+
+	&__img > img {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		border-radius: 20px;
+		border: 2px solid rgba(0, 0, 0, 0.5);
+	}
+
+	&__count {
+		position: absolute;
+		top: 20px;
+		right: 20px;
+	}
+
+	&__author {
+		@apply mb-1 text-xsm font-semibold;
+		color: rgba(0, 0, 0, 0.75);
+	}
+
+	&__name {
+		@apply text-lg;
+	}
+}

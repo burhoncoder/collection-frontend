@@ -1,0 +1,16 @@
+.tag {
+	@apply text-sm font-bold text-white;
+
+	cursor: pointer;
+	user-select: none;
+	padding: 5px 15px;
+	border-radius: 20px;
+	width: max-content;
+	white-space: nowrap;
+	transition: 0.2s ease-in-out;
+	background-color: rgba(0, 0, 0, 0.2);
+
+	&_active {
+		@apply bg-primary;
+	}
+}

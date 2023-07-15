@@ -1,0 +1,30 @@
+.sidebar__link {
+	@apply font-medium text-black;
+	display: flex;
+	align-items: center;
+	padding: 14px 20px;
+
+	border-radius: 20px;
+	transition: 0.2s ease-in-out;
+
+	&:not(:last-child) {
+		@apply mb-4;
+	}
+
+	&:hover {
+		@apply text-white;
+		background-color: #3a8cff;
+	}
+
+	&:hover svg {
+		@apply fill-white;
+	}
+
+	&_active {
+		@apply bg-primary text-white;
+	}
+
+	&_active svg {
+		@apply fill-white;
+	}
+}

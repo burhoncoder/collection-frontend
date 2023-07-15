@@ -1,0 +1,19 @@
+.logo {
+	@apply mb-8 flex items-center justify-center text-xlg font-bold;
+
+	&__circle {
+		@apply flex items-center justify-center bg-primary text-white;
+
+		width: 50px;
+		height: 50px;
+		border-radius: 100%;
+	}
+
+	&__name {
+		@apply ml-3 text-primary;
+	}
+
+	&__name span {
+		@apply ml-1 text-black;
+	}
+}

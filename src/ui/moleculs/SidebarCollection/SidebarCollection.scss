@@ -1,0 +1,15 @@
+.last-collection {
+	@apply flex items-center justify-between;
+
+	&:not(:last-child) {
+		@apply mb-4;
+	}
+
+	&__items {
+		@apply flex items-center justify-center bg-primary text-xsm font-semibold text-white;
+
+		width: 20px;
+		height: 20px;
+		border-radius: 100%;
+	}
+}

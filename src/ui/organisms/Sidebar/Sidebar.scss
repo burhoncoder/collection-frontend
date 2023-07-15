@@ -1,0 +1,20 @@
+.sidebar {
+	position: fixed;
+	height: 100vh;
+	width: 300px;
+	overflow-y: auto;
+	z-index: var(--layout-z-index);
+
+	padding: 40px 30px;
+	border-right: 1px solid rgba(0, 0, 0, 0.1);
+
+	&__subtitle {
+		@apply mb-3 text-sm font-bold;
+		color: rgba(0, 0, 0, 0.5);
+	}
+
+	&__menu {
+		@apply mb-5 pb-5;
+		border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+	}
+}

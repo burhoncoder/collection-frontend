@@ -25,12 +25,41 @@
         "@typescript-eslint",
         "react",
         "import",
+		"prettier",
         "unused-imports",
+		"simple-import-sort",
         "react-refresh"
     ],
     "rules": {
         "react-refresh/only-export-components": "warn",
         "prettier/prettier": "error",
-		"unused-imports/no-unused-imports": "error"
+		"unused-imports/no-unused-imports": "error",
+		"import/no-unresolved": "off",
+		"simple-import-sort/exports": "error",
+		"simple-import-sort/imports": [
+			"error",
+			{
+				"groups": [
+					["^\\u0000"],
+					["^react$", "^react-dom$", "^react-router$", "^react-router-dom$", "^react", "^@?\\w"],
+					// Config import
+					["^config"],
+					// Absolute imports and Relative imports.
+					["^infrastructure(/.*|$)", "^shared(/.*|$)", "^core(/.*|$)"],
+					["^application(/.*|$)", "^ui(/.*|$)"],
+
+					// Parent imports. Put `..` last.
+					["^\\.\\.(?!/?$)", "^\\.\\./?$"],
+					// Other relative imports. Put same-folder imports and `.` last.
+					["^\\./(?=.*/)(?!/?$)", "^\\.(?!/?$)", "^\\./?$"],
+					// images imports
+					["^assets(/.*|$)"],
+					// Style imports.
+					["^.+\\.s?css$"],
+					["^.+\\.(svg|jpg|png)$"],
+					["^"]
+				]
+			}
+		]
 	}
 }

@@ -1,0 +1,42 @@
+@import "node_modules/swiper/swiper";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+	--layout-z-index: 100;
+	--modal-z-index: 110;
+}
+
+body {
+	font-family: Inter, serif;
+}
+
+.radius_full {
+	border-radius: 100%;
+}
+
+.radius_half {
+	border-radius: 25px;
+}
+
+.container {
+	width: 100%;
+	max-width: 1320px;
+
+	padding-right: 15px;
+	padding-left: 15px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.section {
+	&-padding {
+		@apply mt-10;
+	}
+
+	&-title {
+		@apply mb-8;
+	}
+}
