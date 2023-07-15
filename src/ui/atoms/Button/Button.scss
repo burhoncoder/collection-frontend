@@ -20,9 +20,9 @@
 	}
 
 	&_size-sm {
-		font-size: 14px;
 		height: 28px;
 		padding: 8px 14px;
+		font-size: 14px;
 	}
 
 	&_variant-primary {
@@ -33,7 +33,6 @@
 
 	&_variant-primary:hover {
 		background-color: #0064f0;
-
 		box-shadow: 0 6px 12px rgb(62 155 255 / 42%);
 	}
 
@@ -46,18 +45,16 @@
 		margin-left: 5px;
 
 		border: 2px solid;
-		border-radius: 50%;
-
 		border-color: #fff;
 		border-bottom-color: transparent;
+		border-radius: 50%;
 
 		animation: rotation 1s linear infinite;
 	}
 
 	&_disabled {
-		opacity: 0.5;
-
 		pointer-events: none;
+		opacity: 0.5;
 	}
 }
 
