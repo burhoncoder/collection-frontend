@@ -1,3 +1,3 @@
 export const config = {
-	baseUrl: "http://localhost:9000",
+	baseUrl: "https://collection-api.onrender.com",
 };
