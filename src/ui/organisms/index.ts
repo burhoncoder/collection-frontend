@@ -1,5 +1,12 @@
 export { Collections } from "./Collections/Collections";
 export { CollectionSwiper } from "./CollectionSwiper/CollectionSwiper";
+export { Comment } from "./Comment/Comment.tsx";
 export { Header } from "./Header/Header.tsx";
+export { ItemFields } from "./ItemFields/ItemFields.tsx";
+export { ItemsGrid } from "./ItemsGrid/ItemsGrid.tsx";
 export { LastCollection } from "./LastCollection/LastCollection.tsx";
+export { AppModal } from "./Modal/AppModal.tsx";
+export { Modal } from "./Modal/Modal.tsx";
+export { Pagination } from "./Pagination/Pagination";
+export { Portal } from "./Portal/Portal.tsx";
 export { Sidebar } from "./Sidebar/Sidebar.tsx";

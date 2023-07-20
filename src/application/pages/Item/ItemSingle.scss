@@ -1,0 +1,17 @@
+.feedback {
+	&-btn {
+		@apply flex items-center justify-center bg-light;
+		width: 40px;
+		height: 40px;
+		border-radius: 100%;
+		transition: 0.2s ease-in-out;
+	}
+
+	&-btn_like {
+		@apply bg-success;
+	}
+
+	&-btn_dislike {
+		@apply bg-alert;
+	}
+}

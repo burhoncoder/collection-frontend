@@ -1,0 +1,46 @@
+.app-table-wrapper {
+	@apply py-10;
+	border-radius: 20px;
+	box-shadow: 0 0 10px 0 rgb(0 0 0 / 10%);
+}
+
+.app-table {
+	border-collapse: collapse;
+	width: 100%;
+
+	&__no-data {
+		max-width: 450px;
+		margin: auto;
+		padding: 40px 0;
+	}
+
+	&__no-data svg {
+		width: 100%;
+		height: max-content;
+	}
+}
+
+.table {
+	&__body-tr {
+		overflow: hidden;
+	}
+
+	&__th {
+		@apply font-medium;
+
+		padding: 13px 20px;
+
+		color: #718096;
+		text-align: left;
+
+		border-top: 1px solid #eeeff2;
+		border-bottom: 1px solid #eeeff2;
+	}
+
+	&__td {
+		@apply font-semibold;
+
+		padding: 20px;
+		border-bottom: 1px solid #eeeff2;
+	}
+}

@@ -1,11 +1,11 @@
 import React from "react";
 
 export type ButtonProps = {
-	variant?: "primary" | "outlined" | "danger";
-	size?: "lg" | "md" | "sm";
+	variant?: "primary" | "filled" | "outlined" | "danger";
+	size?: "lg" | "md" | "sm" | "icon";
 	text?: string;
 	isDisabled?: boolean;
 	isLoading?: boolean;
-	roundness?: "half" | "full";
+	roundness?: "half" | "full" | false;
 	link?: string;
 } & Omit<React.ComponentPropsWithoutRef<"button">, "disabled">;

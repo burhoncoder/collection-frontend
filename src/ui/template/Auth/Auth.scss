@@ -1,0 +1,21 @@
+.auth-layout {
+	@apply relative flex items-center justify-center;
+
+	width: 100vw;
+	min-height: 100vh;
+
+	&::before {
+		content: "";
+
+		position: absolute;
+		top: 0;
+		left: 0;
+		transform: translate(-20%, -30%);
+
+		width: 60vw;
+		height: 60vw;
+
+		background: linear-gradient(131deg, #0c1829 0%, #1a79ff 100%);
+		border-radius: 100%;
+	}
+}

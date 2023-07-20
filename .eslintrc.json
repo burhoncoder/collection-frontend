@@ -31,6 +31,10 @@
         "react-refresh"
     ],
     "rules": {
+		"import/named": "off",
+		"@typescript-eslint/no-empty-function": "off",
+		"@typescript-eslint/no-namespace": "off",
+		"@typescript-eslint/ban-types": "off",
         "react-refresh/only-export-components": "warn",
         "prettier/prettier": "error",
 		"unused-imports/no-unused-imports": "error",

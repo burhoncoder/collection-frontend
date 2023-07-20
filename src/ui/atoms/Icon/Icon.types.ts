@@ -6,4 +6,16 @@ export interface IconProps extends SVGProps<SVGElement> {
 
 export type IconType = Record<IconNames, any>;
 
-export type IconNames = "home" | "collection" | "tag" | "user" | "item-count";
+export type IconNames =
+	| "home"
+	| "collection"
+	| "tag"
+	| "user"
+	| "item-count"
+	| "arrow-right"
+	| "arrow-left"
+	| "like"
+	| "dislike"
+	| "calendar"
+	| "overlay-close"
+	| "no-data";

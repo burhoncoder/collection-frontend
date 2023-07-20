@@ -1,0 +1,16 @@
+.item-field {
+	@apply flex items-center;
+	max-width: 500px;
+
+	& > :first-child {
+		width: 20%;
+	}
+
+	& > :last-child {
+		width: 80%;
+	}
+
+	&:not(:last-child) {
+		@apply mb-5;
+	}
+}

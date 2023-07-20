@@ -1,7 +1,10 @@
 export { Avatar } from "./Avatar/Avatar";
 export { Button } from "./Button/Button";
+export { ControlError } from "./Control/ControlError.tsx";
+export { ControlLabel } from "./Control/ControlLabel.tsx";
 export { Icon } from "./Icon/Icon";
 export { Logo } from "./Logo/Logo";
 export { Tag } from "./Tag/Tag";
+export type { TagProps } from "./Tag/Tag.types.ts";
 export { Text } from "./Text/Text";
 export { Title } from "./Title/Title";

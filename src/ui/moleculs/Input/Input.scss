@@ -1,0 +1,70 @@
+.input {
+	&__container {
+		position: relative;
+	}
+
+	&__field {
+		@apply text-md;
+
+		width: 100%;
+		min-width: 0;
+		transition: 0.1s ease-in-out;
+	}
+
+	&__field::placeholder {
+		color: rgb(0 0 0 / 50%);
+	}
+
+	&__field_sm {
+		@apply text-xsm;
+
+		height: 28px;
+	}
+
+	&__field_md {
+		@apply text-sm;
+
+		height: 38px;
+	}
+
+	&__field_lg {
+		@apply text-md;
+
+		height: 48px;
+	}
+
+	&__field_outlined {
+		@apply border-1 border-solid border-control;
+
+		background: #fff;
+		border-radius: 25px;
+	}
+
+	&__field_outlined:focus:not(&__field_error) {
+		@apply border-primary;
+		box-shadow: 0 0 0 3px rgb(26 121 255 / 12%);
+	}
+
+	&__field_outlined.input__field_sm {
+		padding: 0 10px;
+	}
+
+	&__field_outlined.input__field_md {
+		padding: 0 14px;
+	}
+
+	&__field_outlined.input__field_lg {
+		padding: 0 18px;
+	}
+
+	&__field_error {
+		@apply border-alert;
+
+		box-shadow: 0 0 0 3px rgb(252 78 78 / 12%);
+	}
+
+	&__field_disabled {
+		pointer-events: none;
+		opacity: 0.5;
+	}
+}

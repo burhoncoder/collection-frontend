@@ -7,7 +7,9 @@ import { CollectionCard } from "ui/moleculs";
 export const LastCollection = () => {
 	return (
 		<div className="section-padding">
-			<Title as="h3" text="Latest Collections" className="section-title" />
+			<div className="section-heading">
+				<Title as="h3" text="Latest Collections" className="section-title" />
+			</div>
 
 			<Swiper slidesPerView={5} spaceBetween={20}>
 				<SwiperSlide>

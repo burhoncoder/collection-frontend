@@ -1,0 +1,42 @@
+.modal {
+	position: fixed;
+	z-index: 100;
+	top: 0;
+	right: 0;
+	left: 0;
+
+	overflow: auto;
+	display: flex;
+	align-items: center;
+
+	height: 100vh;
+	padding: 50px;
+
+	&__overlay {
+		position: absolute;
+		inset: 0;
+		background: rgb(60 65 72 / 60%);
+		backdrop-filter: blur(2px);
+	}
+
+	&__close {
+		position: absolute;
+		top: 30px;
+		right: 30px;
+		background: rgb(203 203 203 / 50%);
+	}
+
+	&__content {
+		position: relative;
+
+		width: 100%;
+		max-width: 500px;
+		margin: auto;
+		padding: 60px;
+		padding: 120px 40px 100px;
+
+		background: #fff;
+		border-radius: 50px;
+		box-shadow: 0 6px 58px rgb(121 145 173 / 19.6%);
+	}
+}

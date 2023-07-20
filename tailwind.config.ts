@@ -3,6 +3,10 @@ export default {
 	content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
 	theme: {
 		extend: {
+			borderWidth: {
+				1: "1px",
+			},
+
 			colors: {
 				primary: "#1A79FF",
 				complementary: "#FF9F1A",

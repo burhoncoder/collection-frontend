@@ -1,0 +1,21 @@
+.comment {
+	@apply flex items-start;
+
+	&__info {
+		@apply ml-5;
+	}
+
+	&__username {
+		@apply mr-5;
+	}
+
+	&__date {
+		@apply ml-1;
+		color: rgb(0 0 0 / 75%);
+	}
+
+	&__text {
+		max-width: 60%;
+		line-height: 140%;
+	}
+}

@@ -2,23 +2,28 @@ import React, { Suspense } from "react";
 import { Route, Routes } from "react-router-dom";
 
 import { routes } from "application/router/routes.tsx";
-import { Layout } from "ui/template";
 
 export const AppRouter = () => {
 	return (
-		<Suspense fallback={<div></div>}>
-			<Routes>
-				<Route path="/" element={<Layout />}>
-					{routes.map((route, idx) => (
+		<Routes>
+			{routes.map((route, idx) => (
+				<Route key={idx} path={route.path} element={route.layout}>
+					{route.children.map((ChildRoute, idx) => (
 						<Route
 							key={idx}
-							index={route.index}
-							path={route.path}
-							element={<Suspense fallback={<div></div>}>{route.element}</Suspense>}
+							index={ChildRoute.index}
+							path={ChildRoute.path}
+							element={
+								<>
+									<Suspense fallback={<div></div>}>
+										<ChildRoute.element />
+									</Suspense>
+								</>
+							}
 						></Route>
 					))}
 				</Route>
-			</Routes>
-		</Suspense>
+			))}
+		</Routes>
 	);
 };

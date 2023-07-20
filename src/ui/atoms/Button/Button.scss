@@ -1,10 +1,11 @@
 .btn {
+	@apply relative font-medium;
+
 	display: flex;
 	align-items: center;
 
 	width: max-content;
 
-	font-weight: 700;
 	line-height: 140%;
 
 	transition: 0.1s ease-in-out;
@@ -25,6 +26,13 @@
 		font-size: 14px;
 	}
 
+	&_size-icon {
+		justify-content: center;
+		width: 48px;
+		height: 48px;
+		border-radius: 15px;
+	}
+
 	&_variant-primary {
 		@apply bg-primary text-white;
 
@@ -36,17 +44,49 @@
 		box-shadow: 0 6px 12px rgb(62 155 255 / 42%);
 	}
 
-	&-spinner {
-		display: inline-block;
+	&_variant-danger {
+		@apply bg-alert text-white;
 
-		box-sizing: border-box;
+		box-shadow: 0 6px 12px rgb(252 78 78 / 26%);
+	}
+
+	&_variant-danger:hover {
+		background-color: #ff3c3c;
+		box-shadow: 0 6px 12px rgb(252 78 78 / 42%);
+	}
+
+	&_variant-outlined {
+		border: 1px solid rgb(0 0 0 / 50%);
+	}
+
+	&_variant-outlined:hover {
+		box-shadow: 0 6px 12px rgb(0 0 0 / 10%);
+	}
+
+	&_variant-filled {
+		background-color: rgb(204 204 204 / 50%);
+	}
+
+	&-spinner {
+		position: absolute;
+		inset: 0;
+
+		background-color: inherit;
+		border-radius: 25px;
+	}
+
+	&-spinner::after {
+		content: "";
+
+		position: absolute;
+		top: 50%;
+		left: 50%;
+
 		width: 16px;
 		height: 16px;
-		margin-left: 5px;
 
-		border: 2px solid;
-		border-color: #fff;
-		border-bottom-color: transparent;
+		border: 2px solid #fff;
+		border-bottom-color: #ddd;
 		border-radius: 50%;
 
 		animation: rotation 1s linear infinite;
@@ -60,10 +100,10 @@
 
 @keyframes rotation {
 	0% {
-		transform: rotate(0deg);
+		transform: translate(-50%, -50%) rotate(0deg);
 	}
 
 	100% {
-		transform: rotate(360deg);
+		transform: translate(-50%, -50%) rotate(360deg);
 	}
 }

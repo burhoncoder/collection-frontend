@@ -1,6 +1,7 @@
 @import "node_modules/swiper/swiper";
+@import "node_modules/react-toastify/scss/main";
+@import "node_modules/react-loading-skeleton/dist/skeleton.css";
 
-@tailwind base;
 @tailwind components;
 @tailwind utilities;
 
@@ -32,10 +33,48 @@ body {
 
 .section {
 	&-padding {
-		@apply mt-10;
+		@apply mt-14;
 	}
 
-	&-title {
+	&-heading {
 		@apply mb-8;
 	}
+}
+
+.description {
+	@apply font-medium;
+	line-height: 160%;
+	color: rgb(0 0 0 / 75%);
+
+	& > *:not(:last-child) {
+		@apply mb-5;
+	}
+}
+
+.content-wrapper {
+	@apply p-10;
+}
+
+.control {
+	@apply relative;
+
+	&-label {
+		@apply mb-3 block font-medium;
+	}
+
+	&-error {
+		@apply block text-xsm font-bold text-alert;
+		position: absolute;
+		bottom: -20px;
+		left: 0;
+	}
+}
+
+.auth-container {
+	@apply border-2 border-solid border-control;
+
+	padding: 80px 110px 60px;
+	background: linear-gradient(135deg, rgb(239 239 239 / 60%) 0%, rgb(255 255 255 / 10%) 100%);
+	backdrop-filter: blur(30px);
+	border-radius: 50px;
 }
